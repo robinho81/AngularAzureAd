@@ -1,0 +1,5 @@
+<p *ngIf="!isLoggedIn">
+  You are not currently logged in!
+<button (click)="login()">Login to Azure AD</button>
+</p>
+<span *ngIf="isLoggedIn">You are already logged in.</span>

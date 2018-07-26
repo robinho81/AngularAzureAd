@@ -1,0 +1,11 @@
+<h2>Welcome to the sample authentication app!</h2>
+<div class="navigation-bar">
+<nav *ngIf="isLoggedIn">
+  <a routerLink="/dashboard">Dashboard</a> &nbsp;
+  <a routerLink="/product-list">Products</a>
+</nav>
+<span style="flex: 1;"></span>
+<span *ngIf="isLoggedIn">Logged in as: {{userName}}</span>
+<a *ngIf="isLoggedIn" routerLink="/logout">[Logout]</a>
+</div>
+<router-outlet></router-outlet>
